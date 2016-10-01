@@ -8,5 +8,7 @@
             "email": "varlog.err@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "phing/phing": "^2.15"
+    }
 }
