@@ -9,6 +9,7 @@
         }
     ],
     "require": {
-        "phing/phing": "^2.15"
+        "phing/phing": "^2.15",
+        "symfony/yaml": "^3.1"
     }
 }
