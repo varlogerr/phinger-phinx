@@ -1,0 +1,12 @@
+{
+    "name": "phinger/phinx",
+    "description": "Phing predefined phinx targets module",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Varlog",
+            "email": "varlog.err@gmail.com"
+        }
+    ],
+    "require": {}
+}
