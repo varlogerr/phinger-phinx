@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="phinger_phinx">
+    <!--
+    Required properties              (defaults):
+        phinger.phinx.environment    (build)
+        phinger.phinx.phinx_bin_path (./vendor/bin/phinx)
+        phinger.phinx.config_path    (./migrations/phinx.yml)
+    -->
+    <target name="phinger:phinx:migrate" description="Run phinx migrations">
+        <exec passthru="true" checkreturn="true"
+              executable="${phinger.phinx.phinx_bin_path}">
+            <arg value="migrate" />
+            <arg value="--configuration=${phinger.phinx.config_path}" />
+            <arg value="--environment=${phinger.phinx.environment}" />
+        </exec>
+    </target>
+</project>
