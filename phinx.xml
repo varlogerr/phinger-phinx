@@ -15,4 +15,19 @@
             <arg value="--environment=${phinger.phinx.environment}" />
         </exec>
     </target>
+
+    <!--
+    Required properties              (defaults):
+        phinger.phinx.environment    (build)
+        phinger.phinx.phinx_bin_path (./vendor/bin/phinx)
+        phinger.phinx.config_path    (./migrations/phinx.yml)
+    -->
+    <target name="phinger:phinx:seed" description="Run phinx seeders">
+        <exec passthru="true" checkreturn="true"
+              executable="${phinger.phinx.phinx_bin_path}">
+            <arg value="seed:run" />
+            <arg value="--configuration=${phinger.phinx.config_path}" />
+            <arg value="--environment=${phinger.phinx.environment}" />
+        </exec>
+    </target>
 </project>
