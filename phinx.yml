@@ -1,5 +1,5 @@
 phinger:
   phinx:
-    environment: build
+    environment: deploy
     phinx_bin_path: ./vendor/bin/phinx
     config_path: ./migrations/phinx.yml
