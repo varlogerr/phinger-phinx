@@ -1,4 +1,4 @@
-#Phinger MySQL
+#Phinger Phinx
 
 Collection of phing targets for Phinx migrations
 
