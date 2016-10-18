@@ -49,3 +49,21 @@ _{project-path}/build.xml_
     />
 </project>
 ```
+
+## Targets
+
+### Run phinx migrations
+`phinger:phinx:migrate`  
+
+#### Properties / params (defaults):
+* `phinger.phinx.environment`    (deploy)  
+* `phinger.phinx.phinx_bin_path` (./vendor/bin/phinx)  
+* `phinger.phinx.config_path`    (./migrations/phinx.yml)  
+
+### Run phinx seeders
+`phinger:phinx:seed`  
+
+#### Properties / params (defaults):
+* `phinger.phinx.environment`    (deploy)  
+* `phinger.phinx.phinx_bin_path` (./vendor/bin/phinx)  
+* `phinger.phinx.config_path`    (./migrations/phinx.yml)  
