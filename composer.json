@@ -2,6 +2,7 @@
     "name": "phinger/phinx",
     "description": "Phing predefined phinx targets module",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Varlog",
